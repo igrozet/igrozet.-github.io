@@ -1,0 +1,197 @@
+body {margin: 0;padding: 0;font-family: sans-serif;color: #262626;}
+
+section {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+section.sec1 {
+  background: url(https://cameralabs.org/media/lab18/03/27/fotograf-Sergey-Borisov_1.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+section.sec2 {
+  background: url(https://cameralabs.org/media/lab16/post/07-16/27-1/fotograf-Lukas-Dvorak_20.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+section.sec3 {
+  background: url(https://cameralabs.org/media/lab16/post/03-16/02/fotograf-Villi-Roni_17.jpg)no-repeat center / cover;
+  background-attachment: fixed;
+}
+section.sec4 {
+  background: url(https://pics.photographer.ru/pictures/64453.jpg)no-repeat center / cover;
+  background-attachment: fixed;
+}
+.sec-text {
+  padding: 4% 8%;
+  height: auto;
+}
+.sec-text__title {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+.sec-text__dsc {
+  font-size: 1em;
+}
+
+
+
+.container {
+    width: 120px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  path {
+    stroke-dasharray: 99.47578430175781;
+    stroke-dashoffset: -99.47578430175781;
+    fill: transparent;
+  }
+  
+  svg.animate path {
+    animation: 1.7s ease forwards draw;
+    opacity:1;
+  }
+  
+  @keyframes draw {
+    0% {
+      opacity: 1;
+      stroke-dashoffset: -99.47578430175781;
+      fill: transparent;
+      transform: translateY(0);
+    }
+    
+    35% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    
+    60% {
+      fill: #3da35a;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    100% {
+      fill: #3da35a;
+      stroke-dashoffset: 0;
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  button {
+    cursor: pointer;
+    min-width: 200px;
+    padding: 15px 5px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background: #262626;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(184, 20, 20);
+    transition: all 1s;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 25px rgb(56,100,38);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+
+
+
+  body { margin: 0; padding: 0;}
+  #container {width:100%;}
+  section { padding: 5% 15%; margin: 0 auto;}
+
+  .sup2{
+    margin-top: 11px;
+}
+
+
+
+
+
+
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -20px;
+  
+  top:7680px;
+
+}
+
+label {
+  display: block;
+  left: 0px;
+  top: 0;
+  position: relative;
+  width: 300px;
+  height: 40px;
+  z-index: 10;
+  line-height: 40px;
+  font-weight: bold;
+  background: #fdfdfd;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+}
+
+label:after {
+  content: "БОЛЬШЕ";
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  background: rgb(233, 238, 240), 229, 231);
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+}
+
+#checkbox {
+  display: none;
+}
+
+:checked + label {
+  left: 0px;
+}
+
+:checked + label:after {
+  left: 150px;
+  background: rgb(255, 255, 255);
+  content: "ФОТОГРАФОВ";
+}
+
+
+.sup3{
+  font-size:40px;
+  padding-top:10px;
+  color: floralwhite;
+ font-family: serif;
+ 
+}
